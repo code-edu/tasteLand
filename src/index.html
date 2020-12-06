@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+  <title>Taste Land</title>
+</head>
+<body>
+  <div class="container mt-3 container-medium">
+    <div class="row text-center">
+        <div class="col-lg-4">
+            <p class="display-3 caveat-2 text-center slogan">Smells great!</p>
+        </div>
+        <div class="col-lg-3 text-center img-slogan">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="col-lg-4">
+            <p class="display-3 caveat-2 text-center slogan">Tastes better!</p>
+        </div>
+    </div>
+  </div>
+  <section class="search-your-recipe rounded-lg">
+      <!-- Search Part -->
+    <div class="row pt-4 pb-2 bg-secondary m-0 rounded-top">
+        <div class="col-lg-3"><h1 class="caveat display-3 text-center">Recipes:</h1></div>
+        <div class="col-lg-6">
+            <div class="wrap">
+                <form class="search">
+                   <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                   <button type="submit" class="searchButton">
+                        <svg>
+                            <use href="img/icons.svg#icon-magnifying-glass"></use>
+                        </svg>
+                  </button>
+                </form>
+             </div>
+        </div>
+        <div class="col-lg-3">
+            <div class="likes">
+                <div class="likes__field">
+                    <p class="caveat display-3 pr-3">Favorites</p>
+                    <svg class="likes__icon">
+                        <use href="img/icons.svg#icon-heart"></use>
+                    </svg>
+                </div>
+                <div class="likes__panel">
+                    <ul class="likes__list">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Results part -->
+    <div id="main_row" class="row">
+      <div class="col-lg-3">
+        <div class="results">
+          <ul class="results__list">
+            
+          </ul>
+
+          <div class="results__pages">
+    
+        
+
+          </div> 
+      </div>
+      </div>
+
+      <div class="col-lg-6 bg-secondary">
+        <div class="recipe">
+        
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="shopping">
+            <h2 class="heading-2">My Shopping List</h2>
+
+            <ul class="shopping__list">
+            
+            </ul>
+            <button class="btn-small btn_clear">
+              <span>Clear All</span>
+            </button>
+            <div class="copyright text-center">
+                &copy; by Milos Cadjenovic. Powered by
+                <a href="https://spoonacular.com/" target="_blank" class="link">spoonacular.com</a>.
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+</body>
+</html>

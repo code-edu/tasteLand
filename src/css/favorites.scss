@@ -1,0 +1,132 @@
+$tab:'(max-width: 991px)';
+$medium_device : 'only screen and (min-width: 992px) and (max-width: 1366px)';
+
+.likes {
+  
+  .likes__field {
+    cursor: pointer;
+    //padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    transition: all .3s; 
+  }
+  .likes__field:hover {
+    background-color: #F2EFEE; 
+  }
+
+  .likes__panel:hover,
+  .likes__field:hover + .likes__panel {
+    visibility: visible;
+    opacity: 1; 
+  }
+
+  .likes__icon {
+    fill: #ff5e62;;
+    height: 3.75rem;
+    width: 3.75rem; 
+
+  }
+  .likes__panel {
+    position: absolute;
+    right: 0;
+    top: 6.6rem;
+    z-index: 10;
+    //padding: 2rem 0;
+    width: 95%;
+    background-color: #fff;
+    //box-shadow: 0 0.8rem 5rem 2rem rgba(101, 90, 86, 0.1);
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s .2s; 
+    @media #{$medium_device}{
+      top: 4.4rem;
+    }
+  }
+
+  
+
+  .likes__list {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0;
+  }
+
+  .likes__link:link, .likes__link:visited {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.2rem;
+    transition: all .3s;
+    text-decoration: none;
+    @media #{$medium_device}{
+      padding: .2rem .5rem;
+    }
+  }
+
+  .likes__link:hover {
+    background-color: #F9F5F3;
+    transform: translateY(-2px);
+  }
+  .likes__link:active {
+    background-color: #F9F5F3;
+  }
+
+  .likes__fig {
+    flex: 0 0 5.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    height: 5.5rem;
+    margin-right: 1rem;
+    position: relative;
+    backface-visibility: hidden;
+    @media #{$medium_device}{
+      margin-right: .7rem;
+      margin-top: .5rem;
+      margin-bottom: .4rem;
+      height: 3.5rem;
+      flex: 0 0 3.5rem;
+    }
+    
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all .3s;
+    }
+  }
+
+  .likes__fig::before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
+    opacity: .4;
+  }
+
+  .likes__name {
+    font-size: 1rem;
+    color: #ff5e62;
+    text-transform: uppercase;
+    font-weight: 600;
+    @media #{$medium_device}{
+      font-size: .7rem;
+    }
+  }
+  .likes__author {
+    font-size: 0.9rem;
+    color: #968B87;
+    text-transform: uppercase;
+    font-weight: 400;
+    @media #{$medium_device}{
+      font-size: .6rem;
+    }
+  }
+
+}
+  
+  

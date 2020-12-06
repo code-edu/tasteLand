@@ -1,0 +1,82 @@
+$tab:'(max-width: 991px)';
+$medium_device : 'only screen and (min-width: 992px) and (max-width: 1366px)';
+
+body {
+  
+  background: #ff9966;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.container-medium {
+  @media #{$medium_device}{
+    max-width: 60rem;
+  }
+}
+
+.slogan {
+  padding-top: 5rem;
+  @media #{$medium_device}{
+    font-size: 3.2rem;
+    line-height: 2.5rem;
+    text-align: right;
+    
+  }
+}
+
+.img-slogan {
+  @media #{$medium_device}{
+    img {
+      width: 70%;
+      height: auto;
+    }
+  }
+}
+
+.search-your-recipe{
+  max-width: 100rem;
+  min-height: 80rem;
+  margin: 0 auto;  
+  background-color: $white;
+  box-shadow: -1.717px 8.835px 85.56px 6.44px rgba(170, 170, 170, 0.29);
+  // padding: 165px 0 100px;
+  //border-radius: 6px;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  @media #{$tab}{
+    padding: 70px 0;
+    margin-top: 170px;
+  }
+  @media #{$medium_device}{
+    max-width: 60rem;
+  }
+}
+
+#main_row {
+  min-height: inherit;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0); 
+  }
+  100% {
+    transform: rotate(360deg); 
+  } 
+}
+
+.loader {
+  margin: 5rem auto;
+  text-align: center; 
+  svg {
+    height: 5.5rem;
+    width: 5.5rem;
+    fill: #ff5e62;
+    transform-origin: 44% 50%;
+    animation: rotate 1.5s infinite linear; 
+  }
+}

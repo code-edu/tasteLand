@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat&display=swap');
+$tab:'(max-width: 991px)';
+$medium_device : 'only screen and (min-width: 992px) and (max-width: 1366px)';
+
+.caveat {
+  font-family: 'Caveat', cursive;
+  color: #ff5e62;
+  line-height: 3.5rem;
+  @media #{$medium_device}{
+    font-size: 3.2rem;
+    line-height: 2.5rem;
+  }
+}
+
+.caveat-2 {
+  font-family: 'Caveat', cursive;
+  color: #FFF;
+  //line-height: 3.5rem;
+  
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+  
+}
+
+.searchTerm {
+  width: 100%;
+  border: 2px solid #ff5e62;
+  //border-right: none;
+  padding: 5px;
+  height: 5rem;
+  border-radius: 10rem;
+  outline: none;
+  color: #ff5e62;
+  font-family: 'Caveat', cursive;
+  background-color: #fff;
+  font-size: 2.5rem;
+  @media #{$medium_device}{
+    padding: 2px;
+    height: 2.9rem;
+  }
+}
+.searchTerm:focus,.searchTerm:not(:focus) {
+  padding-left: 2rem;
+  @media #{$medium_device}{
+    font-size: 1.9rem;
+  }
+}
+
+.searchTerm:focus::placeholder {
+  color: transparent;
+}
+
+.searchTerm::placeholder {
+  color: #ff5e62;
+  font-size: 2.5rem;
+  @media #{$medium_device}{
+    font-size: 1.9rem;
+  }
+}
+
+.searchButton {
+  width: 8rem;
+  height: 4.8rem;
+  border: 1px solid #ff5e62;
+  background: #ff5e62;
+  text-align: center;
+  color: #fff;
+  border-radius: 10rem;
+  cursor: pointer;
+  margin-left: -8rem;
+  margin-top: 0.1rem;
+  @media #{$medium_device}{
+    width: 5rem;
+    height: 2.7rem;
+    margin-left: -5rem;
+  }
+}
+
+.searchButton svg {
+  height: 2.9rem;
+  width: 2.9rem;
+  fill: currentColor;
+  //margin: 0 .2rem; 
+  @media #{$medium_device}{
+    width: 1.9rem;
+    height: 1.9rem;
+  }
+}
+
+.searchButton svg:hover {
+  transform: scale(1.15);
+  transition: all .3s;
+}
+
+/*Resize the wrap to see the search bar change!*/

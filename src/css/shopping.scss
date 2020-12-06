@@ -1,0 +1,166 @@
+$tab:'(max-width: 991px)';
+$medium_device : 'only screen and (min-width: 992px) and (max-width: 1366px)';
+
+.shopping {
+  //padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column; 
+  height: 100%;
+  .heading-2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #ff5e62;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+    text-align: center;
+    transform: skewY(-3deg); 
+    @media #{$medium_device}{
+      font-size: 1.6rem;
+      margin: 1.3rem 0;
+    }
+  }
+
+  .shopping__list {
+    list-style: none;
+    max-height: 77rem;
+    //overflow: scroll;
+    padding-left: .5rem; 
+    color: #968B87;
+    @media #{$medium_device}{
+      padding-left: .2rem; 
+    }
+  }
+
+  .shopping__item {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem 0;
+    border-bottom: 1px solid #F2EFEE;
+    position: relative; 
+    @media #{$medium_device}{
+      padding: .5rem 0;
+    }
+  }
+
+  .shopping__count {
+    flex: 0 0 6.5rem;
+    padding: .4rem .5rem;
+    border: 1px solid #F2EFEE;
+    border-radius: 2px;
+    margin-right: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between; 
+
+    @media #{$medium_device}{
+      flex: 0 0 3.5rem;
+      padding: .2rem .3rem;
+    }
+
+    input {
+      color: inherit;
+      //background-color: green;
+      font-family: inherit;
+      font-size: 1.2rem;
+      text-align: center;
+      border: none;
+      width: 3.7rem;
+      border-radius: 3px; 
+      @media #{$medium_device}{
+        font-size: .8rem;
+        width: 2.7rem;
+      }
+    }
+
+    input:focus {
+      outline: none;
+      background-color: #F2EFEE; 
+    }
+
+    p {
+      //background-color: green;
+      font-size: 1.1rem; 
+      padding-top: .8rem;
+      padding-left: .5rem;
+      @media #{$medium_device}{
+        font-size: .7rem;
+        padding-top: .2rem;
+        padding-left: .2rem;
+        margin-bottom: .1rem; 
+      }
+      
+    }
+
+  
+  }
+
+  .shopping__description {
+    flex: 1;
+    font-size: 1.1rem;
+    margin-top: .4rem;
+    margin-right: 1.5rem; 
+    //background-color: green;
+    padding-top: 1rem;
+    @media #{$medium_device}{
+      font-size: .7rem;
+      margin-top: .2rem;
+      margin-bottom: .2rem;
+      margin-right: 1rem;
+      padding-top: .2rem;
+    }
+  }
+
+  .shopping__delete {
+    margin-top: .5rem;
+    position: absolute;
+    right: 0;
+    background-image: linear-gradient(to right, transparent 0%, #fff 40%, #fff 100%);
+    width: 3.75rem;
+    //padding-left: 2rem;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s; 
+    padding-top: 1.2rem;
+    fill: #ff5e62;
+    svg {
+      height: 1.7rem;
+      width: 1.7rem;
+      @media #{$medium_device}{
+        height: .9rem;
+        width: .9rem;
+      }
+    }
+    @media #{$medium_device}{
+      margin-top: .2rem;
+      width: 2.75rem;
+      padding-top: .2rem;
+      margin-left: .2rem;
+    }
+  }
+
+  .shopping__item:hover .shopping__delete {
+    opacity: 1;
+    visibility: visible; 
+  }
+
+  .copyright {
+    color: #968B87;
+    font-size: 1.1rem;
+    margin-top: auto;
+    @media #{$medium_device}{
+      font-size: .9rem;
+    }
+  }
+  
+  .btn_clear {
+    visibility: hidden;
+    @media #{$medium_device}{
+      font-size: .9rem;
+      padding: .5rem .7rem;
+      width: 70%;
+      margin: 0 auto;
+      justify-content: center;
+    }
+  }
+}
+
